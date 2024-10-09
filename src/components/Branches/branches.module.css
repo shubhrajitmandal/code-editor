@@ -1,0 +1,51 @@
+.container {
+  height: calc(100% - 28px);
+  width: 100%;
+  overflow: auto;
+}
+
+.loader {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.branch-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.branch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 12px;
+}
+
+.branchname {
+  font-size: 16px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.branchname:hover {
+  background: var(--highlight);
+}
+
+.branchicon {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.child {
+  padding-left: 8px;
+}
+
+.active {
+  background: var(--highlight);
+}

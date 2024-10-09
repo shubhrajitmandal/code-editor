@@ -1,0 +1,33 @@
+.editor-container {
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--light-gray);
+  height: 28px;
+}
+
+.splitter {
+  background: #000;
+}
+
+.menu button {
+  outline: 0;
+  border: 0;
+  height: 100%;
+  padding: 4px 12px;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 1px solid var(--light-gray);
+  cursor: pointer;
+}
+
+.menu .active {
+  background-color: var(--highlight);
+}

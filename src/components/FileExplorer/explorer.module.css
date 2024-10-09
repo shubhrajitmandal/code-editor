@@ -1,0 +1,15 @@
+.container {
+  height: calc(100% - 28px);
+  width: 100%;
+  overflow: auto;
+}
+
+.loader {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.file-container {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+export const fileTypeMappings: { [key: string]: string } = {
+  '.js': 'javascript',
+  '.py': 'python',
+  '.yml': 'yaml',
+  '.json': 'json',
+  '.sql': 'sql',
+  '.gitkeep': 'git',
+  '.msgpack': 'json',
+  '.gpickle': 'python',
+  '.txt': 'text',
+  '.log': 'text',
+  '.DS_Store': 'text',
+  '.md': 'markup',
+  '.gitignore': 'git',
+};
