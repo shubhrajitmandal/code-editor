@@ -1,8 +1,25 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+This is a simple code-editor app similar to VS Code which allows you to create and edit new files.
+
+Layout: On the left side is the file explorer and on the right is the code editor. There are different action buttons next to the folders in file explorer for adding folders and files respectively.
+On the top right side, there is a button to toggle the diff editor.
+
 ## Getting Started
 
-First, run the development server:
+### Install the dependencies:
+
+Ensure that node and a package manager installed: How to install node: https://nodejs.org/en/download/package-manager.
+
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### Run the development server:
 
 ```bash
 npm run dev
@@ -18,7 +35,28 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+
+The project folder is consists of the following:
+
+- `.next`: Contains output of NextJs build process
+- `node_modules`: Contains all modules of the installed packages
+- `src`: Contains all the app logic
+  - `app`: Contains all pages and routing logic
+  - `components`: Contains all custom components
+  - `context`: Contains all contexts
+  - `hooks`: Contains all custom hooks
+  - `models`: Contains all model interfaces
+  - `utils`: Contains all utility scripts
+- `.eslintrc.json`: Configurations for `eslint`
+- `.gitignore`: Files to ignore by `git`
+- `.prettierignore`: Files to ignore by `prettier`
+- `.prettierrc.json`: Configurations for `prettier`
+- `next.config.mjs`: NextJs configurations
+- `package.json`: Lists the project dependencies
+- `package-locks.json`: Lists the exact version of installed dependencies
+- `README.md`: Documentation for the project
+- `tsconfig.json`: Typescript configurations
 
 ## Learn More
 
